@@ -1,0 +1,27 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>{%block title%}Главная{%endblock%} - Тестовое приложение</title>
+	<link rel="stylesheet" type="text/css" href="{%static 'main/style.css'%}">
+</head>
+<body>
+	<header>
+        <h1>Тестовое приложение</h1>
+    </header>
+    <nav>
+		<table class="table-nav-top">
+        <tr>
+            <td><a href="{%url 'main:index'%}">Главная</a></td>
+            <td><a href="#">Поиск</a></td>
+            <td><a href="#">Добавить</a></td>
+        </tr>
+        </table>
+	</nav>
+	<section>
+        {%block content%}
+		{%endblock%}
+    </section>
+</body>
+</html>
