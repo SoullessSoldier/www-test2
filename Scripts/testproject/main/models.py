@@ -22,7 +22,7 @@ class Clients(models.Model):
     client_status=models.CharField(max_length=50, verbose_name='Статус клиента (согласно выбранному тарифу)')
     
     def __str__(self):
-        return self.name
+        return self.full_name
     
     class Meta:
         verbose_name='Клиент'
